@@ -1,3 +1,3 @@
 # CSS ANIMATIONS
 
-A collection of CSS animations I use often.
+An ongoing collection of CSS animations I use often.
