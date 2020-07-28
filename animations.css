@@ -1,0 +1,74 @@
+/* <- ********************************************* -> 
+>>>>> CSS ANIMATIONS 
+/* <- ********************************************* -> 
+
+
+/*** SHAKE / BOUNCE ***/
+
+.shake {
+  -webkit-animation: shake 0.75s ease-in-out;
+  animation: shake 0.75s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0px);
+  }
+  12% {
+    transform: translateY(-10.89px);
+  }
+
+  24% {
+    transform: translateY(-12.56px);
+  }
+  40% {
+    transform: translateY(5.56px);
+  }
+  70% {
+    transform: translateY(-5.28px);
+  }
+}
+
+/*** FLOAT / BOB ***/
+
+.float {
+  -webkit-animation: float 3.4s infinite;
+  animation: float 3.4s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  24% {
+    transform: translateY(-6.56px);
+  }
+  40% {
+    transform: translateY(6.28px);
+  }
+  66% {
+    transform: translateY(-3.56px);
+  }
+}
+
+/*** PULSE ***/
+
+:root {
+  /* set to any color at 75%, then the same color at 0% */
+  --shadow-full: rgba(255, 0, 0, 0.75);
+  --shadow-transparent: rgba(255, 0, 0, 0);
+}
+
+.pulse {
+  -webkit-animation: pulse 1s ease infinite;
+  animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px 0px var(--shadow-full);
+  }
+  100% {
+    box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
+  }
+}
