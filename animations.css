@@ -1,8 +1,7 @@
+  
 /* <- ********************************************* -> 
 >>>>> CSS ANIMATIONS 
 /* <- ********************************************* -> 
-
-
 /*** SHAKE / BOUNCE ***/
 
 .shake {
@@ -10,22 +9,51 @@
   animation: shake 0.75s ease-in-out;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   12% {
-    transform: translateY(-10.89px);
+    -webkit-transform: translateY(-10.89px);
+            transform: translateY(-10.89px);
   }
 
   24% {
-    transform: translateY(-12.56px);
+    -webkit-transform: translateY(-12.56px);
+            transform: translateY(-12.56px);
   }
   40% {
-    transform: translateY(5.56px);
+    -webkit-transform: translateY(5.56px);
+            transform: translateY(5.56px);
   }
   70% {
-    transform: translateY(-5.28px);
+    -webkit-transform: translateY(-5.28px);
+            transform: translateY(-5.28px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  12% {
+    -webkit-transform: translateY(-10.89px);
+            transform: translateY(-10.89px);
+  }
+
+  24% {
+    -webkit-transform: translateY(-12.56px);
+            transform: translateY(-12.56px);
+  }
+  40% {
+    -webkit-transform: translateY(5.56px);
+            transform: translateY(5.56px);
+  }
+  70% {
+    -webkit-transform: translateY(-5.28px);
+            transform: translateY(-5.28px);
   }
 }
 
@@ -36,18 +64,41 @@
   animation: float 3.4s infinite;
 }
 
-@keyframes float {
+@-webkit-keyframes float {
   0% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   24% {
-    transform: translateY(-6.56px);
+    -webkit-transform: translateY(-6.56px);
+            transform: translateY(-6.56px);
   }
   40% {
-    transform: translateY(6.28px);
+    -webkit-transform: translateY(6.28px);
+            transform: translateY(6.28px);
   }
   66% {
-    transform: translateY(-3.56px);
+    -webkit-transform: translateY(-3.56px);
+            transform: translateY(-3.56px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  24% {
+    -webkit-transform: translateY(-6.56px);
+            transform: translateY(-6.56px);
+  }
+  40% {
+    -webkit-transform: translateY(6.28px);
+            transform: translateY(6.28px);
+  }
+  66% {
+    -webkit-transform: translateY(-3.56px);
+            transform: translateY(-3.56px);
   }
 }
 
@@ -64,11 +115,24 @@
   animation: pulse 1s ease infinite;
 }
 
-@keyframes pulse {
+@-webkit-keyframes pulse {
   0% {
-    box-shadow: 0px 0px 0px 0px var(--shadow-full);
+    -webkit-box-shadow: 0px 0px 0px 0px var(--shadow-full);
+            box-shadow: 0px 0px 0px 0px var(--shadow-full);
   }
   100% {
-    box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
+    -webkit-box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
+            box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px var(--shadow-full);
+            box-shadow: 0px 0px 0px 0px var(--shadow-full);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
+            box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
   }
 }
