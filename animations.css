@@ -229,54 +229,54 @@
 /***......-- DELAY UTILITY CLASSES --......***/
 
 /*** delays to stagger animation timing ***/
-/*** starts at 0 to align with template mapping ***/
+/*** add with template language -> class=`delay-${index}` ***/
 
 .delay-0 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.delay-1 {
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
 
-.delay-1 {
+.delay-2 {
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
 
-.delay-2 {
+.delay-3 {
     -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s;
 }
 
-.delay-3 {
+.delay-4 {
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
 }
 
-.delay-4 {
+.delay-5 {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
-.delay-5 {
+.delay-6 {
     -webkit-animation-delay: 1.2s;
     animation-delay: 1.2s;
 }
 
-.delay-6 {
+.delay-7 {
     -webkit-animation-delay: 1.4s;
     animation-delay: 1.4s;
 }
 
-.delay-7 {
+.delay-8 {
     -webkit-animation-delay: 1.6s;
     animation-delay: 1.6s;
 }
 
-.delay-8 {
+.delay-9 {
     -webkit-animation-delay: 1.8s;
     animation-delay: 1.8s;
-}
-
-.delay-9 {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
 }
