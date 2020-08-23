@@ -1,138 +1,282 @@
-  
-/* <- ********************************************* -> 
->>>>> CSS ANIMATIONS 
-/* <- ********************************************* -> 
-/*** SHAKE / BOUNCE ***/
+/* <- ********************************************* -> */
+/*    CSS ANIMATIONS                                   
+/* <- ********************************************* -> */
+
+/***......-- FADE INS --......***/
+
+.fade-in {
+    opacity: 0;
+    -webkit-animation: fade-in 1s cubic-bezier(0.5, 1, 0.89, 1) forwards;
+    animation: fade-in 1s cubic-bezier(0.5, 1, 0.89, 1) forwards;
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    -webkit-animation: fade-in 1s cubic-bezier(0.5, 1, 0.89, 1) forwards;
+    animation: fade-in 1s cubic-bezier(0.5, 1, 0.89, 1) forwards;
+}
+
+@-webkit-keyframes fade-in-up {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+/***......-- SHAKE / BOUNCE --......***/
 
 .shake {
-  -webkit-animation: shake 0.75s ease-in-out;
-  animation: shake 0.75s ease-in-out;
+    -webkit-animation: shake 0.75s ease-in-out;
+    animation: shake 0.75s ease-in-out;
 }
 
 @-webkit-keyframes shake {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  12% {
-    -webkit-transform: translateY(-10.89px);
-            transform: translateY(-10.89px);
-  }
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    12% {
+        -webkit-transform: translateY(-10.89px);
+        transform: translateY(-10.89px);
+    }
 
-  24% {
-    -webkit-transform: translateY(-12.56px);
-            transform: translateY(-12.56px);
-  }
-  40% {
-    -webkit-transform: translateY(5.56px);
-            transform: translateY(5.56px);
-  }
-  70% {
-    -webkit-transform: translateY(-5.28px);
-            transform: translateY(-5.28px);
-  }
+    24% {
+        -webkit-transform: translateY(-12.56px);
+        transform: translateY(-12.56px);
+    }
+    40% {
+        -webkit-transform: translateY(5.56px);
+        transform: translateY(5.56px);
+    }
+    70% {
+        -webkit-transform: translateY(-5.28px);
+        transform: translateY(-5.28px);
+    }
 }
 
 @keyframes shake {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  12% {
-    -webkit-transform: translateY(-10.89px);
-            transform: translateY(-10.89px);
-  }
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    12% {
+        -webkit-transform: translateY(-10.89px);
+        transform: translateY(-10.89px);
+    }
 
-  24% {
-    -webkit-transform: translateY(-12.56px);
-            transform: translateY(-12.56px);
-  }
-  40% {
-    -webkit-transform: translateY(5.56px);
-            transform: translateY(5.56px);
-  }
-  70% {
-    -webkit-transform: translateY(-5.28px);
-            transform: translateY(-5.28px);
-  }
+    24% {
+        -webkit-transform: translateY(-12.56px);
+        transform: translateY(-12.56px);
+    }
+    40% {
+        -webkit-transform: translateY(5.56px);
+        transform: translateY(5.56px);
+    }
+    70% {
+        -webkit-transform: translateY(-5.28px);
+        transform: translateY(-5.28px);
+    }
 }
 
-/*** FLOAT / BOB ***/
+/***......-- FLOAT / BOB --......***/
 
 .float {
-  -webkit-animation: float 3.4s infinite;
-  animation: float 3.4s infinite;
+    -webkit-animation: float 3.4s infinite;
+    animation: float 3.4s infinite;
 }
 
 @-webkit-keyframes float {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  24% {
-    -webkit-transform: translateY(-6.56px);
-            transform: translateY(-6.56px);
-  }
-  40% {
-    -webkit-transform: translateY(6.28px);
-            transform: translateY(6.28px);
-  }
-  66% {
-    -webkit-transform: translateY(-3.56px);
-            transform: translateY(-3.56px);
-  }
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    24% {
+        -webkit-transform: translateY(-6.56px);
+        transform: translateY(-6.56px);
+    }
+    40% {
+        -webkit-transform: translateY(6.28px);
+        transform: translateY(6.28px);
+    }
+    66% {
+        -webkit-transform: translateY(-3.56px);
+        transform: translateY(-3.56px);
+    }
 }
 
 @keyframes float {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  24% {
-    -webkit-transform: translateY(-6.56px);
-            transform: translateY(-6.56px);
-  }
-  40% {
-    -webkit-transform: translateY(6.28px);
-            transform: translateY(6.28px);
-  }
-  66% {
-    -webkit-transform: translateY(-3.56px);
-            transform: translateY(-3.56px);
-  }
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    24% {
+        -webkit-transform: translateY(-6.56px);
+        transform: translateY(-6.56px);
+    }
+    40% {
+        -webkit-transform: translateY(6.28px);
+        transform: translateY(6.28px);
+    }
+    66% {
+        -webkit-transform: translateY(-3.56px);
+        transform: translateY(-3.56px);
+    }
 }
 
-/*** PULSE ***/
+/***......-- PULSE --......***/
 
 :root {
-  /* set to any color at 75%, then the same color at 0% */
-  --shadow-full: rgba(255, 0, 0, 0.75);
-  --shadow-transparent: rgba(255, 0, 0, 0);
+    /* set to any color at 75%, then the same color at 0% */
+    --shadow-full: rgba(255, 0, 0, 0.75);
+    --shadow-transparent: rgba(255, 0, 0, 0);
 }
 
 .pulse {
-  -webkit-animation: pulse 1s ease infinite;
-  animation: pulse 1s ease infinite;
+    -webkit-animation: pulse 1s ease infinite;
+    animation: pulse 1s ease infinite;
 }
 
 @-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0px 0px 0px 0px var(--shadow-full);
-            box-shadow: 0px 0px 0px 0px var(--shadow-full);
-  }
-  100% {
-    -webkit-box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
-            box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
-  }
+    0% {
+        -webkit-box-shadow: 0px 0px 0px 0px var(--shadow-full);
+        box-shadow: 0px 0px 0px 0px var(--shadow-full);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
+        box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
+    }
 }
 
 @keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0px 0px 0px 0px var(--shadow-full);
-            box-shadow: 0px 0px 0px 0px var(--shadow-full);
-  }
-  100% {
-    -webkit-box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
-            box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
-  }
+    0% {
+        -webkit-box-shadow: 0px 0px 0px 0px var(--shadow-full);
+        box-shadow: 0px 0px 0px 0px var(--shadow-full);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
+        box-shadow: 0px 0px 8px 60px var(--shadow-transparent);
+    }
+}
+
+/***......-- WAVE EFFECT --......***/
+
+.waves {
+    -webkit-animation: waves 2s linear infinite;
+    animation: waves 2s linear infinite;
+}
+
+@-webkit-keyframes waves {
+    0%,
+    50% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+    25% {
+        -webkit-transform: scaleY(4);
+        transform: scaleY(4);
+    }
+}
+
+@keyframes waves {
+    0%,
+    50% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+    25% {
+        -webkit-transform: scaleY(4);
+        transform: scaleY(4);
+    }
+}
+
+/***......-- DELAY UTILITY CLASSES --......***/
+
+/*** delays to stagger animation timing ***/
+/*** starts at 0 to align with template mapping ***/
+
+.delay-0 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.delay-1 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.delay-2 {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.delay-3 {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.delay-4 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.delay-5 {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.delay-6 {
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.delay-7 {
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+.delay-8 {
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+.delay-9 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
 }
