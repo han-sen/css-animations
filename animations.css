@@ -226,6 +226,37 @@
     }
 }
 
+/***......-- TURN IN --......***/
+
+.turn-in {
+    -webkit-transform: rotateY(90deg) rotateX(-15deg);
+    transform: rotateY(90deg) rotateX(-15deg);
+    -webkit-animation: turn-in 1s ease-in-out forwards;
+    animation: turn-in 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes turn-in {
+    from {
+        -webkit-transform: rotateY(90deg) rotateX(-15deg);
+        transform: rotateY(90deg) rotateX(-15deg);
+    }
+    to {
+        -webkit-transform: rotateY(0deg) rotateX(0deg);
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+}
+
+@keyframes turn-in {
+    from {
+        -webkit-transform: rotateY(90deg) rotateX(-15deg);
+        transform: rotateY(90deg) rotateX(-15deg);
+    }
+    to {
+        -webkit-transform: rotateY(0deg) rotateX(0deg);
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+}
+
 /***......-- DELAY UTILITY CLASSES --......***/
 
 /*** delays to stagger animation timing ***/
